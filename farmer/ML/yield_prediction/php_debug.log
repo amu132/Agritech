@@ -1,0 +1,319 @@
+2025-03-01 15:05:39 Input values:
+State: Maharashtra
+District: AHMEDNAGAR
+Season: Kharif
+Crop: Jowar
+Area: 40
+
+2025-03-01 15:05:56 Input values:
+State: Maharashtra
+District: AHMEDNAGAR
+Season: Rabi
+Crop: Safflower
+Area: 40
+
+2025-03-01 15:06:54 Input values:
+Command: python "C:\xampp\htdocs\agriculture-portal-main\farmer/ML/yield_prediction/yield_prediction.py" " Maharashtra " " AHMEDNAGAR " " Rabi " " Safflower " "40"
+Output: Error: Invalid JSON input: Expecting value: line 1 column 2 (char 1)
+
+
+2025-03-01 15:07:11 Input values:
+Command: python "C:\xampp\htdocs\agriculture-portal-main\farmer/ML/yield_prediction/yield_prediction.py" " Maharashtra " " MUMBAI " " Summer " " Sunflower " "40"
+Output: Error: Invalid JSON input: Expecting value: line 1 column 2 (char 1)
+
+
+2025-03-01 15:09:02 Input values:
+JSON args: ["Maharashtra","MUMBAI","Summer","Sunflower",40]
+Command: python "C:\xampp\htdocs\agriculture-portal-main\farmer/ML/yield_prediction/yield_prediction.py" "[ Maharashtra , MUMBAI , Summer , Sunflower ,40]" 2>&1
+Output: Error: Invalid JSON input: Expecting value: line 1 column 3 (char 2)
+
+
+2025-03-01 15:09:43 Input values:
+JSON args: ["Maharashtra","AHMEDNAGAR","Rabi","Maize",40]
+Command: python "C:\xampp\htdocs\agriculture-portal-main\farmer/ML/yield_prediction/yield_prediction.py" "[ Maharashtra , AHMEDNAGAR , Rabi , Maize ,40]" 2>&1
+Output: Error: Invalid JSON input: Expecting value: line 1 column 3 (char 2)
+
+
+2025-03-01 15:11:35 Input values:
+JSON args: [\"Maharashtra\",\"AHMEDNAGAR\",\"Rabi\",\"Maize\",40]
+Command: python "C:\xampp\htdocs\agriculture-portal-main\farmer/ML/yield_prediction/yield_prediction.py" '[\"Maharashtra\",\"AHMEDNAGAR\",\"Rabi\",\"Maize\",40]' 2>&1
+Output: Error: Invalid season: Rabi
+
+
+Season value before JSON encode: 'Rabi'
+Values array: Array
+(
+    [0] => Maharashtra
+    [1] => AHMEDNAGAR
+    [2] => Rabi
+    [3] => Maize
+    [4] => 40
+)
+
+JSON before escaping: ["Maharashtra","AHMEDNAGAR","Rabi","Maize",40]
+Output: Error: Invalid JSON input: Expecting value: line 1 column 3 (char 2)
+
+
+Season value before JSON encode: 'Whole Year'
+Values array: Array
+(
+    [0] => Maharashtra
+    [1] => AHMEDNAGAR
+    [2] => Whole Year
+    [3] => Sugarcane
+    [4] => 40
+)
+
+JSON before escaping: ["Maharashtra","AHMEDNAGAR","Whole Year","Sugarcane",40]
+Output: Error: Invalid JSON input: Expecting value: line 1 column 3 (char 2)
+
+
+2025-03-01 15:16:31 Input values:
+Values array: Array
+(
+    [0] => Maharashtra
+    [1] => AHMEDNAGAR
+    [2] => Whole Year
+    [3] => Sugarcane
+    [4] => 40
+)
+
+JSON encoded: ["Maharashtra","AHMEDNAGAR","Whole Year","Sugarcane",40.0]
+Command: python "C:\xampp\htdocs\agriculture-portal-main\farmer/ML/yield_prediction/yield_prediction.py" "["Maharashtra","AHMEDNAGAR","Whole Year","Sugarcane",40.0]" 2>&1
+Raw output: Error: Expected 2 arguments (including script name) but got 3
+
+2025-03-01 15:18:09 Input values:
+Values array: Array
+(
+    [0] => Maharashtra
+    [1] => AHMEDNAGAR
+    [2] => Whole Year
+    [3] => Sugarcane
+    [4] => 40
+)
+
+Escaped JSON: "[ Maharashtra , AHMEDNAGAR , Whole Year , Sugarcane ,40]"
+Command: python "C:\xampp\htdocs\agriculture-portal-main\farmer/ML/yield_prediction/yield_prediction.py" "[ Maharashtra , AHMEDNAGAR , Whole Year , Sugarcane ,40]" 2>&1
+Raw output: Error: Invalid JSON input: Expecting value: line 1 column 3 (char 2)
+
+2025-03-01 15:20:30 Input values:
+Values array: Array
+(
+    [0] => Maharashtra
+    [1] => AHMEDNAGAR
+    [2] => Whole Year
+    [3] => Sugarcane
+    [4] => 40
+)
+
+Command: python "C:\xampp\htdocs\agriculture-portal-main\farmer/ML/yield_prediction/yield_prediction.py" "C:\Users\Amogh Gaikwad\AppData\Local\Temp\cro6427.tmp"
+Raw output: 1484.83
+
+2025-03-01 15:21:00 Input values:
+Values array: Array
+(
+    [0] => Maharashtra
+    [1] => AHMEDNAGAR
+    [2] => Rabi
+    [3] => Maize
+    [4] => 40
+)
+
+Command: python "C:\xampp\htdocs\agriculture-portal-main\farmer/ML/yield_prediction/yield_prediction.py" "C:\Users\Amogh Gaikwad\AppData\Local\Temp\croD967.tmp"
+Raw output: 48.13
+
+2025-03-01 15:23:03 Input values:
+Values array: Array
+(
+    [0] => Maharashtra
+    [1] => AHMEDNAGAR
+    [2] => Rabi
+    [3] => Maize
+    [4] => 40
+)
+
+Command: python "C:\xampp\htdocs\agriculture-portal-main\farmer/ML/yield_prediction/yield_prediction.py" "C:\Users\Amogh Gaikwad\AppData\Local\Temp\croBB76.tmp"
+Raw output: 48.13
+
+2025-03-01 15:23:34 Input values:
+Values array: Array
+(
+    [0] => Maharashtra
+    [1] => AHMEDNAGAR
+    [2] => Kharif
+    [3] => Maize
+    [4] => 40
+)
+
+Command: python "C:\xampp\htdocs\agriculture-portal-main\farmer/ML/yield_prediction/yield_prediction.py" "C:\Users\Amogh Gaikwad\AppData\Local\Temp\cro3432.tmp"
+Raw output: 48.13
+
+2025-03-01 15:26:11 Input values:
+Values array: Array
+(
+    [0] => Maharashtra
+    [1] => AHMEDNAGAR
+    [2] => Whole Year
+    [3] => Sugarcane
+    [4] => 50
+)
+
+Command: python "C:\xampp\htdocs\agriculture-portal-main\farmer/ML/yield_prediction/yield_prediction.py" "C:\Users\Amogh Gaikwad\AppData\Local\Temp\cro969C.tmp"
+Raw output: 1814.56
+
+2025-03-01 15:27:41 Input values:
+Values array: Array
+(
+    [0] => Maharashtra
+    [1] => MUMBAI
+    [2] => Whole Year
+    [3] => Sugarcane
+    [4] => 50
+)
+
+Command: python "C:\xampp\htdocs\agriculture-portal-main\farmer/ML/yield_prediction/yield_prediction.py" "C:\Users\Amogh Gaikwad\AppData\Local\Temp\croF821.tmp"
+Raw output: 1814.56
+
+2025-03-01 15:28:43 Input values:
+Values array: Array
+(
+    [0] => Maharashtra
+    [1] => MUMBAI
+    [2] => Rabi
+    [3] => Wheat
+    [4] => 40
+)
+
+Command: python "C:\xampp\htdocs\agriculture-portal-main\farmer/ML/yield_prediction/yield_prediction.py" "C:\Users\Amogh Gaikwad\AppData\Local\Temp\croEA43.tmp"
+Raw output: 24.69
+
+2025-03-01 15:31:28 Input values:
+Values array: Array
+(
+    [0] => Maharashtra
+    [1] => MUMBAI
+    [2] => Rabi
+    [3] => Wheat
+    [4] => 40
+)
+
+Command: python "C:\xampp\htdocs\agriculture-portal-main\farmer/ML/yield_prediction/yield_prediction.py" "C:\Users\Amogh Gaikwad\AppData\Local\Temp\cro6F39.tmp"
+Raw output: Error: No historical data for this specific combination
+
+2025-03-01 15:31:58 Input values:
+Values array: Array
+(
+    [0] => Maharashtra
+    [1] => AHMEDNAGAR
+    [2] => Summer
+    [3] => Maize
+    [4] => 50
+)
+
+Command: python "C:\xampp\htdocs\agriculture-portal-main\farmer/ML/yield_prediction/yield_prediction.py" "C:\Users\Amogh Gaikwad\AppData\Local\Temp\croE312.tmp"
+Raw output: Error: No historical data for this specific combination
+
+2025-03-01 15:34:16 Input values:
+Values array: Array
+(
+    [0] => Maharashtra
+    [1] => AHMEDNAGAR
+    [2] => Rabi
+    [3] => Wheat
+    [4] => 50
+)
+
+Command: python "C:\xampp\htdocs\agriculture-portal-main\farmer/ML/yield_prediction/yield_prediction.py" "C:\Users\Amogh Gaikwad\AppData\Local\Temp\cro56.tmp"
+Raw output: Error: Invalid season for AHMEDNAGAR. Valid seasons are: Autumn     , Kharif     , Rabi       , Summer     , Whole Year 
+
+2025-03-01 15:37:03 Input values:
+Values array: Array
+(
+    [0] => Maharashtra
+    [1] => AHMEDNAGAR
+    [2] => Rabi
+    [3] => Wheat
+    [4] => 50
+)
+
+Command: python "C:\xampp\htdocs\agriculture-portal-main\farmer/ML/yield_prediction/yield_prediction.py" "C:\Users\Amogh Gaikwad\AppData\Local\Temp\cro8B09.tmp"
+Raw output: Error: Area (50.0) is outside historical range for this combination (1309.00 - 153900.00)
+
+2025-03-01 15:37:49 Input values:
+Values array: Array
+(
+    [0] => Maharashtra
+    [1] => AHMEDNAGAR
+    [2] => Whole Year
+    [3] => Sugarcane
+    [4] => 50
+)
+
+Command: python "C:\xampp\htdocs\agriculture-portal-main\farmer/ML/yield_prediction/yield_prediction.py" "C:\Users\Amogh Gaikwad\AppData\Local\Temp\cro40EC.tmp"
+Raw output: Error: Area (50.0) is outside historical range for this combination (1333.00 - 129500.00)
+
+2025-03-01 15:40:58 Input values:
+Values array: Array
+(
+    [0] => Maharashtra
+    [1] => AHMEDNAGAR
+    [2] => Whole Year
+    [3] => Sugarcane
+    [4] => 50
+)
+
+Command: python "C:\xampp\htdocs\agriculture-portal-main\farmer/ML/yield_prediction/yield_prediction.py" "C:\Users\Amogh Gaikwad\AppData\Local\Temp\cro1F9C.tmp"
+Raw output: 1814.56
+
+2025-03-01 15:44:41 Input values:
+Values array: Array
+(
+    [0] => Maharashtra
+    [1] => AHMEDNAGAR
+    [2] => Whole Year
+    [3] => Sugarcane
+    [4] => 50
+)
+
+Command: python "C:\xampp\htdocs\agriculture-portal-main\farmer/ML/yield_prediction/yield_prediction.py" "C:\Users\Amogh Gaikwad\AppData\Local\Temp\cro883B.tmp"
+Raw output: 1814.56
+
+2025-03-01 15:45:36 Input values:
+Values array: Array
+(
+    [0] => Maharashtra
+    [1] => AHMEDNAGAR
+    [2] => Kharif
+    [3] => Sugarcane
+    [4] => 50
+)
+
+Command: python "C:\xampp\htdocs\agriculture-portal-main\farmer/ML/yield_prediction/yield_prediction.py" "C:\Users\Amogh Gaikwad\AppData\Local\Temp\cro5DBC.tmp"
+Raw output: 1814.56
+
+2025-03-01 15:46:55 Input values:
+Values array: Array
+(
+    [0] => Maharashtra
+    [1] => AHMEDNAGAR
+    [2] => Summer
+    [3] => Sunflower
+    [4] => 50
+)
+
+Command: python "C:\xampp\htdocs\agriculture-portal-main\farmer/ML/yield_prediction/yield_prediction.py" "C:\Users\Amogh Gaikwad\AppData\Local\Temp\cro9553.tmp"
+Raw output: 31.13
+
+2025-03-01 15:48:09 Input values:
+Values array: Array
+(
+    [0] => Maharashtra
+    [1] => AHMEDNAGAR
+    [2] => Summer
+    [3] => Sunflower
+    [4] => 50
+)
+
+Command: python "C:\xampp\htdocs\agriculture-portal-main\farmer/ML/yield_prediction/yield_prediction.py" "C:\Users\Amogh Gaikwad\AppData\Local\Temp\croB460.tmp"
+Raw output: 31.13
+
